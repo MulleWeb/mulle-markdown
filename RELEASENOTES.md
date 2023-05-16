@@ -1,3 +1,8 @@
+### 0.1.2
+
+* prebuilt binaries CI support added
+* mulle-markdown now takes --version
+
 ### 0.1.1
 
 * Do not build cosmopolitan until [Funny callback to US Department of Defense IP address when building cosmopolitan](https://github.com/jart/cosmopolitan/issues/743) has been resolved.

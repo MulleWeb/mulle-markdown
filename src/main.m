@@ -49,6 +49,7 @@ static void   usage( void)
 "   -m         : inline a hardcoded style.css (implies -w)\n"
 "   -t <title> : set title of HTML document (implies -w)\n"
 "   -w         : wrap with HTML header and footer\n"
+"   --version  : print program version and exit\n"
 );
 
    exit( 1);
@@ -84,8 +85,17 @@ int  main( int argc, char *argv[])
       if( argv[ i][ 0] == '-')
          switch( argv[ i][ 1])
          {
-         case 'h' :
          case '-' :
+            if( ! strcmp( "version", &argv[ i][ 2]))
+            {
+               printf( "%u.%u.%u\n",
+                        mulle_markdown_get_version_major(),
+                        mulle_markdown_get_version_minor(),
+                        mulle_markdown_get_version_patch());
+               exit( 0);
+            }
+            // fall thru
+         case 'h' :
             usage();
             break;
 
