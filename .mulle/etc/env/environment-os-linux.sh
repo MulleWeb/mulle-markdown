@@ -1,6 +1,6 @@
 #
 #
 #
-export MULLE_CRAFT_SDKS="musl:default"
+export MULLE_CRAFT_SDKS="musl"
 
 
