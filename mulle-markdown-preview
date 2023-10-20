@@ -46,14 +46,20 @@ then
    case "`uname`" in
       *arwin*)
          open "${html}"
-         sleep 10
-         rm "${html}"
+         if [ "${MULLE_MARKDOWN_PREVIEW_KEEP_HTML}" != 'YES' ]
+         then
+            sleep 10
+            rm "${html}"
+         fi
       ;;
 
       *inux*)
          xdg-open "${html}"
-         sleep 10
-         rm "${html}"
+         if [ "${MULLE_MARKDOWN_PREVIEW_KEEP_HTML}" != 'YES' ]
+         then
+            sleep 10
+            rm "${html}"
+         fi
       ;;
 
       *)
