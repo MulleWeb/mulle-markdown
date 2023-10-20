@@ -4,24 +4,24 @@
 /*
  *  version:  major, minor, patch
  */
-#define MULLE_MARKDOWN_VERSION  ((0 << 20) | (1 << 8) | 2)
+#define MULLE__MARKDOWN_VERSION  ((0 << 20) | (1 << 8) | 3)
 
 
 static inline unsigned int   mulle_markdown_get_version_major( void)
 {
-   return( MULLE_MARKDOWN_VERSION >> 20);
+   return( MULLE__MARKDOWN_VERSION >> 20);
 }
 
 
 static inline unsigned int   mulle_markdown_get_version_minor( void)
 {
-   return( (MULLE_MARKDOWN_VERSION >> 8) & 0xFFF);
+   return( (MULLE__MARKDOWN_VERSION >> 8) & 0xFFF);
 }
 
 
 static inline unsigned int   mulle_markdown_get_version_patch( void)
 {
-   return( MULLE_MARKDOWN_VERSION & 0xFF);
+   return( MULLE__MARKDOWN_VERSION & 0xFF);
 }
 
 #endif
