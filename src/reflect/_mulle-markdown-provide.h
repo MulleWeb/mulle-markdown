@@ -9,13 +9,11 @@
  *
  *      mulle-sde environment set MULLE_MATCH_TO_C_RUN DISABLE
  */
-#ifndef mulle_markdown_provide_h__
-#define mulle_markdown_provide_h__
+#ifndef _mulle__markdown__provide_h__
+#define _mulle__markdown__provide_h__
 
 
-#include "make-style.css.inc"
 #include "mulle-markdown-version.h"
-#include "style.css.inc"
 
 
 #endif

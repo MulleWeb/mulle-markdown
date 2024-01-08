@@ -33,6 +33,14 @@ src/generic/include-private.h
 )
 
 #
+# contents selected with patternfile ??-header--project-only-headers
+#
+set( PROJECT_ONLY_HEADERS
+src/make-style.css.inc
+src/style.css.inc
+)
+
+#
 # contents selected with patternfile ??-header--public-generated-headers
 #
 set( PUBLIC_GENERATED_HEADERS
@@ -54,9 +62,7 @@ src/generic/include.h
 # contents selected with patternfile ??-header--public-headers
 #
 set( PUBLIC_HEADERS
-src/make-style.css.inc
 src/mulle-markdown-version.h
 src/reflect/_mulle-markdown-include-public.h
-src/style.css.inc
 )
 

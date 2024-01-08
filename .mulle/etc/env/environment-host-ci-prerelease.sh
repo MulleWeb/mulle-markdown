@@ -17,6 +17,12 @@ export MULLE__COSMOPOLITAN_BRANCH="prerelease"
 
 
 #
+# cosmopolitan nodetype: ${COSMOPOLITAN_NODETYPE:-tar}
+#
+export COSMOPOLITAN_NODETYPE="git"
+
+
+#
 # mulle-cosmopolitan-cc nodetype: ${MULLE__COSMOPOLITAN__CC_NODETYPE:-tar}
 #
 export MULLE__COSMOPOLITAN__CC_NODETYPE="git"

@@ -37,11 +37,59 @@ md="${1:-README.md}"
 # file must be in local to find images
 html="`mktemp mulle-markdown-preview-XXXXXX.html`" || exit 1
 
+remove_metadata()
+(
+   local line
+   local found
+
+   IFS=$'\n'
+   while read -r line
+   do
+      case "${line}" in
+         \-\-\-*)
+            if [ -z "${found}" ]
+            then
+               found='YES'
+               continue
+            fi
+
+            # emit rest unchecked
+            break
+         ;;
+
+         '')
+            # ignore empty at top and in metadata
+            # if we are outside, we are not in this loop anymore
+            continue
+         ;;
+
+         *)
+            # if in metadata ignore
+            if [ "${found}" = 'YES' ]
+            then
+               continue
+            fi
+
+            # not in metadata and not empty, so no metadata, emit all
+            printf "%s\n" "${line}"
+            break
+         ;;
+      esac
+   done
+
+   while read -r line
+   do
+      printf "%s\n" "${line}"
+   done
+   return
+)
+
+
 #
 # MEMO: xdg-open returns immediately, so we can't immediately remove the
 # preview file
 #
-if mulle-markdown -m < "${md}" > "${html}"
+if remove_metadata < "${md}" | mulle-markdown -m  > "${html}"
 then
    case "`uname`" in
       *arwin*)

@@ -2,7 +2,6 @@
 
 #### 👯 mulle-markdown turns markdown into HTML
 
-
 **mulle-markdown** uses the [hoedown](//github.com/hoedown/hoedown)
 library wrapped into [MulleHoedown](//github.com/MulleWeb/MulleHoedown) to
 convert [Markdown](//en.wikipedia.org/wiki/Markdown) into
@@ -11,9 +10,6 @@ convert [Markdown](//en.wikipedia.org/wiki/Markdown) into
 You can get `mulle-markdown` to add a stylesheet to your HTML output. That
 makes it convenient for quick previewing of markdown files.
 
-| Release Version                                       | Release Notes
-|-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag//mulle-markdown.svg?branch=release) [![Build Status](https://github.com//mulle-markdown/workflows/CI/badge.svg?branch=release)](//github.com//mulle-markdown/actions)| [RELEASENOTES](RELEASENOTES.md) |
 
 ## Executables
 
@@ -98,17 +94,9 @@ mulle-sde env --os-linux set MULLE_CRAFT_SDKS "cosmopolitan:musl:default"
 >
 
 
-## Overview
-![Overview](overview.dot.svg)
+### You are here
 
-| Requirement                                  | Description
-|----------------------------------------------|-----------------------
-| [mulle-cosmopolitan](https://github.com/mulle-cc/mulle-cosmopolitan)             | **EXPERIMENTAL**
-| [mulle-cosmopolitan-cc](https://github.com/mulle-cc/mulle-cosmopolitan-cc)             | 🎪 Cosmopolitan variants of gcc, clang, mulle-clang for mulle-cosmopolitan
-| [mulle-musl](https://github.com/mulle-cc/mulle-musl)             | 🐚 Build the musl C library for static executables
-| [mulle-musl-cc](https://github.com/mulle-cc/mulle-musl-cc)             | 🐚 Add -static flag to musl-gcc (and clang)
-| [MulleHoedown](https://github.com/MulleWeb/MulleHoedown)             | 💃🏼 Markdown support for mulle-objc
-| [MulleObjC-startup](https://github.com/mulle-objc/MulleObjC-startup)             | ▶️  Startup library for MulleObjC
+![Overview](overview.dot.svg)
 
 
 ## Add
@@ -156,7 +144,7 @@ cmake --build build --config Release &&
 cmake --install build --config Release
 ```
 
-## Platforms and Compilers
+### Platforms and Compilers
 
 All platforms and compilers supported by
 [mulle-c11](//github.com/mulle-c/mulle-c11).
@@ -164,5 +152,5 @@ All platforms and compilers supported by
 
 ## Author
 
-[Nat!](https://mulle-kybernetik.com/weblog) for Mulle kybernetiK
+[Nat!](https://mulle-kybernetik.com/weblog) for Mulle kybernetiK  
 

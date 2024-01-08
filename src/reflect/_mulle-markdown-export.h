@@ -9,8 +9,8 @@
  *
  *      mulle-sde environment set MULLE_MATCH_TO_C_RUN DISABLE
  */
-#ifndef mulle_markdown_export_h__
-#define mulle_markdown_export_h__
+#ifndef _mulle__markdown__export_h__
+#define _mulle__markdown__export_h__
 
 
 // no headers

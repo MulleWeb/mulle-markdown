@@ -11,15 +11,18 @@
  *
  */
 
-// You can tweak the following #import with these commands.
-// (Use B8CF2B29-69EA-4BF3-869A-88E18CBB90E7 instead of MulleHoedown if there are duplicate entries)
-//    remove #import: : `mulle-sde dependency mark MulleHoedown no-header`
-//    rename:              `mulle-sde dependency|library set MulleHoedown include whatever.h`
-//    reorder:             `mulle-sde dependency move MulleHoedown <up|down>`
-//    toggle #import:     `mulle-sde dependency mark MulleHoedown [no-]import`
-//    toggle public:       `mulle-sde dependency mark MulleHoedown [no-]public`
-//    toggle optional:     `mulle-sde dependency mark MulleHoedown [no-]require`
-//    remove for platform: `mulle-sde dependency mark MulleHoedown no-platform-<uname>`
+// To remove the following dependency (headers and library) completely:
+//   `mulle-sde dependency remove MulleHoedown`
+// (Use B8CF2B29-69EA-4BF3-869A-88E18CBB90E7 instead of MulleHoedown, if there are duplicate entries)
+//
+// You can tweak the following #import with these commands:
+//    remove #import      : `mulle-sde dependency mark MulleHoedown no-header`
+//    rename              : `mulle-sde dependency|library set MulleHoedown include whatever.h`
+//    reorder             : `mulle-sde dependency move MulleHoedown <up|down>`
+//    toggle #import      : `mulle-sde dependency mark MulleHoedown [no-]import`
+//    toggle public       : `mulle-sde dependency mark MulleHoedown [no-]public`
+//    toggle optional     : `mulle-sde dependency mark MulleHoedown [no-]require`
+//    remove for platform : `mulle-sde dependency mark MulleHoedown no-platform-<uname>`
 //        (use `mulle-sourcetree-to-c --unames` to list known values)
 #import <MulleHoedown/MulleHoedown.h>   // MulleHoedown
 

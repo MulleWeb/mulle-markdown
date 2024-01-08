@@ -38,3 +38,7 @@ mulle-markdown-preview-*.html
 *.sublime-workspace
 coverage/
 optimize/
+coverage*.html
+*.gcda
+*.gcno
+cola/wilted/
