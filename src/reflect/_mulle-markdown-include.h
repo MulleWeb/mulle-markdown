@@ -14,15 +14,18 @@
 #ifndef _mulle_markdown_include_h__
 #define _mulle_markdown_include_h__
 
-// You can tweak the following #include with these commands.
-// (Use 6985D83C-7C14-4163-A97D-AC6C75028D06 instead of m if there are duplicate entries)
-//    remove #include:: `mulle-sde dependency mark m no-header`
-//    rename:              `mulle-sde dependency|library set m include whatever.h`
-//    reorder:             `mulle-sde dependency move m <up|down>`
-//    toggle #include:    `mulle-sde dependency mark m [no-]import`
-//    toggle public:       `mulle-sde dependency mark m [no-]public`
-//    toggle optional:     `mulle-sde dependency mark m [no-]require`
-//    remove for platform: `mulle-sde dependency mark m no-platform-<uname>`
+// To remove the following dependency (headers and library) completely:
+//   `mulle-sde dependency remove m`
+// (Use 6985D83C-7C14-4163-A97D-AC6C75028D06 instead of m, if there are duplicate entries)
+//
+// You can tweak the following #include with these commands:
+//    remove #include: `mulle-sde dependency mark m no-header`
+//    rename              : `mulle-sde dependency|library set m include whatever.h`
+//    reorder             : `mulle-sde dependency move m <up|down>`
+//    toggle #include: `mulle-sde dependency mark m [no-]import`
+//    toggle public       : `mulle-sde dependency mark m [no-]public`
+//    toggle optional     : `mulle-sde dependency mark m [no-]require`
+//    remove for platform : `mulle-sde dependency mark m no-platform-<uname>`
 //        (use `mulle-sourcetree-to-c --unames` to list known values)
 #include <math.h>   // m
 
