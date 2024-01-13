@@ -35,6 +35,8 @@ Options:
    -m         : inline a hardcoded style.css (implies -w)
    -t <title> : set title of HTML document (implies -w)
    -w         : wrap with HTML header and footer
+   --version  : print program version and exit
+
 ```
 
 
@@ -124,12 +126,12 @@ Install the requirements:
 
 | Requirements                                 | Description
 |----------------------------------------------|-----------------------
-| [mulle-cosmopolitan](https://github.com/mulle-cc/mulle-cosmopolitan)             | **EXPERIMENTAL**
+| [mulle-cosmopolitan](https://github.com/mulle-cc/mulle-cosmopolitan)             | To test build use `mulle-sde craft craftorder -- --sdk cosmopolitan`
 | [mulle-cosmopolitan-cc](https://github.com/mulle-cc/mulle-cosmopolitan-cc)             | 🎪 Cosmopolitan variants of gcc, clang, mulle-clang for mulle-cosmopolitan
 | [mulle-musl](https://github.com/mulle-cc/mulle-musl)             | 🐚 Build the musl C library for static executables
 | [mulle-musl-cc](https://github.com/mulle-cc/mulle-musl-cc)             | 🐚 Add -static flag to musl-gcc (and clang)
 | [MulleHoedown](https://github.com/MulleWeb/MulleHoedown)             | 💃🏼 Markdown support for mulle-objc
-| [MulleObjC-startup](https://github.com/mulle-objc/MulleObjC-startup)             | ▶️  Startup library for MulleObjC
+| [MulleObjC-startup](https://github.com/mulle-objc/MulleObjC-startup)             | ▶️  Startup code for MulleObjC
 
 Download the latest [tar](https://github.com/MulleWeb/mulle-markdown/archive/refs/tags/latest.tar.gz) or [zip](https://github.com/MulleWeb/mulle-markdown/archive/refs/tags/latest.zip) archive and unpack it.
 
