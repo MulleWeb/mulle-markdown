@@ -126,7 +126,7 @@ Install the requirements:
 
 | Requirements                                 | Description
 |----------------------------------------------|-----------------------
-| [mulle-cosmopolitan](https://github.com/mulle-cc/mulle-cosmopolitan)             | To test build use `mulle-sde craft craftorder -- --sdk cosmopolitan`
+| [mulle-cosmopolitan](https://github.com/mulle-cc/mulle-cosmopolitan)             | 
 | [mulle-cosmopolitan-cc](https://github.com/mulle-cc/mulle-cosmopolitan-cc)             | 🎪 Cosmopolitan variants of gcc, clang, mulle-clang for mulle-cosmopolitan
 | [mulle-musl](https://github.com/mulle-cc/mulle-musl)             | 🐚 Build the musl C library for static executables
 | [mulle-musl-cc](https://github.com/mulle-cc/mulle-musl-cc)             | 🐚 Add -static flag to musl-gcc (and clang)
