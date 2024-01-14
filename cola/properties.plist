@@ -12,7 +12,6 @@
    dependencies =
    (
       {
-         description="To test build use `mulle-sde craft craftorder -- --sdk cosmopolitan`";
          domain="github";
          name="mulle-cosmopolitan";
          repo="mulle-cosmopolitan";
