@@ -42,9 +42,10 @@ remove_metadata()
    local line
    local found
 
-   IFS=$'\n'
-   while read -r line
+   while IFS= read -r line
    do
+      echo "<${line}>" >> /tmp/x.log
+
       case "${line}" in
          \-\-\-*)
             if [ -z "${found}" ]
@@ -77,19 +78,26 @@ remove_metadata()
       esac
    done
 
-   while read -r line
+   while IFS= read -r line
    do
+      echo "|${line}|" >> /tmp/x.log
       printf "%s\n" "${line}"
    done
-   return
 )
+
+
+print_markdown()
+{
+   cat "$1"
+   echo
+}
 
 
 #
 # MEMO: xdg-open returns immediately, so we can't immediately remove the
 # preview file
 #
-if remove_metadata < "${md}" | mulle-markdown -m  > "${html}"
+if print_markdown "${md}" | remove_metadata | mulle-markdown -m  > "${html}"
 then
    case "`uname`" in
       *arwin*)
