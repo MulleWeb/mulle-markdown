@@ -44,8 +44,6 @@ remove_metadata()
 
    while IFS= read -r line
    do
-      echo "<${line}>" >> /tmp/x.log
-
       case "${line}" in
          \-\-\-*)
             if [ -z "${found}" ]
@@ -80,7 +78,6 @@ remove_metadata()
 
    while IFS= read -r line
    do
-      echo "|${line}|" >> /tmp/x.log
       printf "%s\n" "${line}"
    done
 )
