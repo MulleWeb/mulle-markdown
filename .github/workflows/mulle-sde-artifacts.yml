@@ -53,13 +53,12 @@ jobs:
           name: artifact.cosmopolitan
           # actual file will be ${{ steps.executable.outputs.exepath }} though!
 
-     - name: Upload asset to release
-       uses: actions/upload-release-asset@v1
-       env:
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-       with:
-         upload_url: ${{ github.event.release.upload_url }}
-         asset_path: ${{ steps.executable.outputs.exepath }}
-         asset_name: artifact.cosmopolitan
-         asset_content_type: application/octet-stream
-
+      - name: Upload asset to release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ${{ steps.executable.outputs.exepath }}
+          asset_name: artifact.cosmopolitan
+          asset_content_type: application/octet-stream
