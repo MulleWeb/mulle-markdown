@@ -4,6 +4,7 @@ name: Artifacts
 on:
   release:
      types: [ prereleased, released ]
+  workflow_dispatch:
 
 env:
   BUILD_TYPE: release
