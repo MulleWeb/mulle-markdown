@@ -191,6 +191,12 @@ int  main( int argc, char *argv[])
          else
          {
             fq = fopen( "style.css", "r");
+            if( ! fq)
+            {
+               fprintf( stderr, "Could not open \"style.css\" for reading (%s)", 
+                                 strerror( errno));
+               return( 1);
+            }
             while( (c = getc_unlocked( fq)) != EOF)
                putc_unlocked( c, stdout);
             fclose( fq);
