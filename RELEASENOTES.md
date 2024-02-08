@@ -1,3 +1,7 @@
+### 0.1.4
+
+* don't just crash on -i if style.css is not present
+
 ### 0.1.3
 
 * Various small improvements
