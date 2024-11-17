@@ -36,7 +36,6 @@ Options:
    -t <title> : set title of HTML document (implies -w)
    -w         : wrap with HTML header and footer
    --version  : print program version and exit
-
 ```
 
 
