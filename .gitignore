@@ -44,3 +44,6 @@ coverage*.html
 cola/wilted/
 .vscode/
 *.code-workspace
+cmake-build-debug/
+.idea/
+*.bak
