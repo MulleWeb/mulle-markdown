@@ -19,7 +19,7 @@
 //    remove #import      : `mulle-sde dependency mark MulleHoedown no-header`
 //    rename              : `mulle-sde dependency|library set MulleHoedown include whatever.h`
 //    reorder             : `mulle-sde dependency move MulleHoedown <up|down>`
-//    toggle #import      : `mulle-sde dependency mark MulleHoedown [no-]import`
+//    toggle objc         : `mulle-sde dependency mark MulleHoedown [no-]import`
 //    toggle public       : `mulle-sde dependency mark MulleHoedown [no-]public`
 //    toggle optional     : `mulle-sde dependency mark MulleHoedown [no-]require`
 //    remove for platform : `mulle-sde dependency mark MulleHoedown no-platform-<uname>`
