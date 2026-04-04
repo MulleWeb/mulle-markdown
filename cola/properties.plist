@@ -6,6 +6,7 @@
       name="mulle-markdown";
       user="MulleWeb";
       repo="mulle-markdown";
+      version="0.1.8";
       homepage="https://github.com/MulleWeb/mulle-markdown";
       license="BSD-3-Clause";
    };
