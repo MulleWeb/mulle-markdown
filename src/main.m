@@ -19,6 +19,9 @@ static char   header1[] = \
 static char   css[] = \
 "<link rel=\"stylesheet\" href=\"style.css\">\n";
 
+static char   picocss[] = \
+"<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css\">\n";
+
 static char   header2[] = \
 "<title>%s</title>\n"
 "</head>\n"
@@ -47,6 +50,7 @@ static void   usage( void)
 "   -c         : emit link to \"style.css\" (implies -w)\n"
 "   -i         : inline \"style.css\" into HTML head (implies -w)\n"
 "   -m         : inline a hardcoded style.css (implies -w)\n"
+"   -p         : emit link to Pico CSS via CDN (implies -w)\n"
 "   -t <title> : set title of HTML document (implies -w)\n"
 "   -w         : wrap with HTML header and footer\n"
 "   --version  : print program version and exit\n"
@@ -70,6 +74,7 @@ int  main( int argc, char *argv[])
    {
       int   add_header;
       int   add_css;
+      int   add_picocss;
       int   add_footer;
       int   inline_css;
       int   default_css;
@@ -136,6 +141,13 @@ int  main( int argc, char *argv[])
             config.add_css    = YES;
             ++i;
             continue;
+
+         case 'p' :
+            config.add_header   = YES;
+            config.add_footer   = YES;
+            config.add_picocss  = YES;
+            ++i;
+            continue;
          }
 
       fprintf( stderr, "unknown argument \"%s\"\n", argv[ i]);
@@ -179,8 +191,9 @@ int  main( int argc, char *argv[])
       fwrite( header1, 1, sizeof( header1) - 1, stdout);
    if( config.add_css)
       fwrite( css, 1, sizeof( css) - 1, stdout);
-   else
-      if( config.inline_css)
+   if( config.add_picocss)
+      fwrite( picocss, 1, sizeof( picocss) - 1, stdout);
+   if( ! config.add_css && ! config.add_picocss && config.inline_css)
       {
          fprintf( stdout, "<style>\n");
 
