@@ -24,18 +24,9 @@ makes it convenient for quick previewing of markdown files.
 ## Usage
 
 ```
-Usage:
-   mulle-markdown [options]
+task 860906 could not launch /home/nat/.mulle/var/cache/sde/mulle-markdown-9ced2566/kitchen/mulle-markdown
+/home/nat/.mulle/var/cache/sde/mulle-markdown-9ced2566/kitchen/Debug/mulle-markdown (2:No such file or directory)
 
-   Reads markdown from stdin, writes it to stdout.
-
-Options:
-   -c         : emit link to "style.css" (implies -w)
-   -i         : inline "style.css" into HTML head (implies -w)
-   -m         : inline a hardcoded style.css (implies -w)
-   -t <title> : set title of HTML document (implies -w)
-   -w         : wrap with HTML header and footer
-   --version  : print program version and exit
 ```
 
 
@@ -75,6 +66,11 @@ emits
 > mulle-markdown does not pretty print the resulting HTML. You may want to
 > chain it with mulle-tidy for nicer output.
 
+
+
+## Documentation & Guides
+
+* [API Summary](asset/dox/api/toc)
 
 ## mulle-markdown as a musl or cosmopolitan static executable
 
