@@ -1,7 +1,8 @@
 ### 0.1.10
 
-* document API summary and add license headers to sources
 
-### 0.1.9
 
-Various small improvements
+
+* README now links to an API summary guide (asset/dox/api/toc)
+* documentation reorganized under asset/dox/api
+* BSD license headers added to all source files
