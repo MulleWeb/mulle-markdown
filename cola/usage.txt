@@ -1,2 +1,13 @@
-task 860906 could not launch /home/nat/.mulle/var/cache/sde/mulle-markdown-9ced2566/kitchen/mulle-markdown
-/home/nat/.mulle/var/cache/sde/mulle-markdown-9ced2566/kitchen/Debug/mulle-markdown (2:No such file or directory)
+Usage:
+   mulle-markdown [options]
+
+   Reads markdown from stdin, writes it to stdout.
+
+Options:
+   -c         : emit link to "style.css" (implies -w)
+   -i         : inline "style.css" into HTML head (implies -w)
+   -m         : inline a hardcoded style.css (implies -w)
+   -p         : emit link to Pico CSS via CDN (implies -w)
+   -t <title> : set title of HTML document (implies -w)
+   -w         : wrap with HTML header and footer
+   --version  : print program version and exit
