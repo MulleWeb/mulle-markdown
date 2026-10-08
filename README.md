@@ -25,7 +25,6 @@ makes it convenient for quick previewing of markdown files.
 
 ```
 task 2133851 could not launch /home/nat/.mulle/var/cache/sde/mulle-markdown-9ced2566/kitchen/cosmopolitan-Default/Debug/mulle-markdown (8:Exec format error)
-
 ```
 
 
