@@ -25,7 +25,6 @@ makes it convenient for quick previewing of markdown files.
 
 ```
 task 2133851 could not launch /home/nat/.mulle/var/cache/sde/mulle-markdown-9ced2566/kitchen/cosmopolitan-Default/Debug/mulle-markdown (8:Exec format error)
-
 ```
 
 
@@ -120,8 +119,8 @@ Install the requirements:
 
 | Requirements                                 | Description
 |----------------------------------------------|-----------------------
-| [mulle-cosmopolitan](https://github.com/mulle-cc/mulle-cosmopolitan)             | 
-| [mulle-cosmopolitan-cc](https://github.com/mulle-cc/mulle-cosmopolitan-cc)             | 🎪 Cosmopolitan variants of gcc, clang, mulle-clang for mulle-cosmopolitan
+| [mulle-cosmopolitan](https://github.com/mulle-cc/mulle-cosmopolitan)             | 🎪 Install the prebuilt [Cosmopolitan](//justine.lol/cosmopolitan/index.html)
+| [mulle-cosmopolitan-cc](https://github.com/mulle-cc/mulle-cosmopolitan-cc)             | 🎪 Compiler wrappers that build Cosmopolitan (4.x) static APE executables
 | [mulle-musl](https://github.com/mulle-cc/mulle-musl)             | 🐚 Build the musl C library for static executables
 | [mulle-musl-cc](https://github.com/mulle-cc/mulle-musl-cc)             | 🐚 Add -static flag to musl-gcc (and clang)
 | [MulleHoedown](https://github.com/MulleWeb/MulleHoedown)             | 💃🏼 Markdown support for mulle-objc

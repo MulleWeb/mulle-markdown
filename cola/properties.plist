@@ -3,16 +3,18 @@
    {
       description="👯 mulle-markdown turns markdown into HTML";
       domain="github";
+      language="c";
+      dialect="objc";
       name="mulle-markdown";
       user="MulleWeb";
       repo="mulle-markdown";
-      version="0.1.11";
       homepage="https://github.com/MulleWeb/mulle-markdown";
       license="BSD-3-Clause";
    };
    dependencies =
    (
       {
+         description="🎪 Install the prebuilt [Cosmopolitan](//justine.lol/cosmopolitan/index.html)";
          domain="github";
          name="mulle-cosmopolitan";
          repo="mulle-cosmopolitan";
@@ -20,7 +22,7 @@
          user="mulle-cc";
       },
       {
-         description="🎪 Cosmopolitan variants of gcc, clang, mulle-clang for mulle-cosmopolitan";
+         description="🎪 Compiler wrappers that build Cosmopolitan (4.x) static APE executables";
          domain="github";
          name="mulle-cosmopolitan-cc";
          repo="mulle-cosmopolitan-cc";
